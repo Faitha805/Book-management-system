@@ -8,6 +8,10 @@ body{
     margin-bottom: 10px;
 }
 
+#searchBar{
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .nav{
   display: flex;
   justify-content: space-around;
@@ -51,6 +55,7 @@ body{
   border-radius:15px;
   margin: 2%;
   padding: 1%;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #all-books,  
