@@ -1,7 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {  
     loadBooks();  
     document.getElementById("saveBook").addEventListener("click", saveBook); 
-    document.getElementById("searchBar").addEventListener("input", searchBooks); 
+    document.getElementById("searchBar").addEventListener("input", searchBooks);
+    
+    //Reset modal when closed
+    const bookModal = document.getElementById("bookModal");  
+    bookModal.addEventListener('hidden.bs.modal', clearModal);
 });  
 
 let books = [];  
@@ -82,7 +86,7 @@ function saveBook() {
             genre,  
             status,  
             favorite: false,  
-            image: imageBase64  
+            image: imageBase64 
         };  
 
         if (id) {  

@@ -72,10 +72,11 @@ body{
 }
 
 #add-book{
-  position: fixed;  
-    bottom: 20px;
-    right: 20px;   
-    padding: 10px 20px;
+  position: fixed;
+  z-index:10;  
+  bottom: 20px;
+  right: 20px;   
+  padding: 10px 20px;
 }
 
 .menu-button{
